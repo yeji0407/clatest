@@ -23,6 +23,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://github.com/yeji980407"><img src="https://avatars.githubusercontent.com/u/84702382?v=4?s=100" width="100px;" alt=""/><br /><sub><b>yeji980407</b></sub></a><br /><a href="#infra-yeji980407" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/yeji0407/clatest/commits?author=yeji980407" title="Tests">⚠️</a> <a href="https://github.com/yeji0407/clatest/commits?author=yeji980407" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/yeji0407"><img src="https://avatars.githubusercontent.com/u/55476302?v=4?s=100" width="100px;" alt=""/><br /><sub><b>yeji0407</b></sub></a><br /><a href="https://github.com/yeji0407/clatest/commits?author=yeji0407" title="Code">💻</a></td>
   </tr>
 </table>
 
