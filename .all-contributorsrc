@@ -1,0 +1,26 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "yeji980407",
+      "name": "yeji980407",
+      "avatar_url": "https://avatars.githubusercontent.com/u/84702382?v=4",
+      "profile": "https://github.com/yeji980407",
+      "contributions": [
+        "infra",
+        "test",
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "clatest",
+  "projectOwner": "yeji0407",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
