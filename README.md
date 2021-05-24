@@ -7,8 +7,6 @@
 License](https://img.shields.io/github/license/yeji0407/clatest)
 ![GitHub repo
 size](https://img.shields.io/github/repo-size/yeji0407/clatest)
-<br /> ![GitHub
-contributors](https://img.shields.io/github/contributors/yeji0407/clatest)
 ![GitHub
 stars](https://img.shields.io/github/stars/yeji0407/clatest?style=social)
 ![GitHub
