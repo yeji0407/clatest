@@ -1,14 +1,16 @@
-name: comment-on-pr example
-on: pull_request
+on:
+  push:
+    branches:
+      - main
+
 jobs:
-  example:
-    name: sample comment
+  test:
     runs-on: ubuntu-latest
     steps:
-      - name: comment PR
-        uses: unsplash/comment-on-pr@master
+      - uses: mshick/add-pr-comment@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          msg: "Check out this message!"
-          check_for_duplicate_msg: false  # OPTIONAL 
+          message: |
+            **Hello MASTER** ${{github.event.sender.login}}
+          allow-repeats: true
