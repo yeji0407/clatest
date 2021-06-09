@@ -17,4 +17,6 @@ jobs:
         with:
           message: |
             This PR is opened by ${{ github.event.pull_request.user.login }} .
-          allow-repeats: true
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          repo-token-user-login: 'github-actions[bot]' # The user.login for temporary GitHub tokens
+          allow-repeats: false # This is the default
