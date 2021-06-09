@@ -16,5 +16,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           message: |
-            This PR is opened by ${{ github.event.push.user.login }} .
+            This PR is opened by ${{ github.event.pusher }} .
           allow-repeats: true
