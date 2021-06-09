@@ -17,6 +17,4 @@ jobs:
         with:
           message: |
             This PR is opened by ${{ github.event.pull_request.user.login }} .
-          proxy-url: https://add-pr-comment-proxy-94idvmwyie-uc.a.run.app
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
           allow-repeats: true
