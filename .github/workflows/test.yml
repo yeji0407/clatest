@@ -1,31 +1,18 @@
-name: Demo CI
-
+name: add_contributor
+    
 on:
-  pull_request:
+  push :
+    branches:
+      - main
 
 jobs:
-
   test:
-    name: Run a demo test
     runs-on: ubuntu-latest
     steps:
-
-      - name: main
-        run: |
-          mkdir -p artifacts
-          cat > artifacts/message.md <<EOF
-          # Test Message
-          
-          Note that there are no secrets exposed in this test...
-          <details>
-          <summary>PR to merge $GITHUB_HEAD_REF $GITHUB_SHA -> $GITHUB_BASE_REF</summary>
-          \`\`\`
-          $(env | sort)
-          \`\`\`
-          </details>
-          EOF
-      - name: Save PR message as artifact
-        uses: actions/upload-artifact@v1
+      - uses: mshick/add-pr-comment@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          name: pr_message
-          path: artifacts
+          message: |
+            This PR is opened by ${{ github.event.push.commits[][author][email] }} .
+          allow-repeats: true
