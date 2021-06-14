@@ -14,9 +14,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           message: |
-            merges_url: ${{ github.event.push.merges_url }}
-            commits_url: ${{ github.event.push.commits_url }}
-            git_commits_url: ${{ github.event.push.git_commits_url }}
-            comments_url: ${{ github.event.push.comments_url }}
+            merges_url: ${{ github.event.push.repository.merges_url }}
+            commits_url: ${{ github.event.push.repository.commits_url }}
+            git_commits_url: ${{ github.event.push.repository.git_commits_url }}
+            comments_url: ${{ github.event.push.repository.comments_url }}
+            commits: ${{ github.event.push.commits }}
             
           allow-repeats: true
